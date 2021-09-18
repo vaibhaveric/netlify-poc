@@ -6,6 +6,10 @@ backend:
 media_folder: "public/images" 
 public_folder: "/images" 
 
+# http and https need separate rules if you don’t force_ssl!
+_redirects: https://okaygodemo.netlify.app/* https://okaygodemo.netlify.app/blog/ 200!
+
+
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Blog Posts" # Used in the UI
