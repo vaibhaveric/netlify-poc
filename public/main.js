@@ -64,7 +64,7 @@ const getPosts = () => {
                 const parseContent = ({lines, metadataIndices}) => {
                     if (metadataIndices.length > 0) {
                         lines = lines.slice(metadataIndices[1] + 1, lines.length)
-                    }
+                    } 
                     return lines.join("\n")
                 }
                 const lines = contents.split("\n")
